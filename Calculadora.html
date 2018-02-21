@@ -1,0 +1,39 @@
+<!DOCTYPE html><html>
+<head>
+<title>Ejemplo</title>
+<meta charset="utf-8">
+
+<script type="text/javascript">
+
+function vaciar () {
+  document.getElementById("n1").value = "";
+}
+
+function cuadrado() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value;
+}
+
+function inverso() {
+  var num = document.getElementById("n1");
+  num.value = 1/num.value;
+}
+
+function raizcuadrada() {
+  var num = document.getElementById("n1");
+  num.value = Math.sqrt(num.value);
+}
+
+</script>
+</head>
+<body>
+  <h3> Buenos días, bienvenido a la calculadora de Juan Velásquez C.</h3>
+  <h3> Número:</h3>
+  <input type="text" id="n1" onclick="vaciar()">
+  <p>
+    <button onclick="cuadrado()">x<sup>2</sup></button>
+    <button onclick="inverso()"> 1/x </button>
+    <button onclick="raizcuadrada()"> sqrt(x) </button>
+  </p>
+</body>
+</html>
